@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+maples = Photo.create(
+    title: "Lost Maples",
+    category: "Texas Nature",
+    location: "Lost Maples State Park, TX",
+    year: 2018
+)
+maples.photo.attach(io: File.open("./public/test.jpg"), filename: "test.jpg", content_type: "image/jpg")

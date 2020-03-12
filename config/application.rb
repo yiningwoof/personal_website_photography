@@ -35,3 +35,7 @@ module WangPortfolioPhotography
     config.api_only = true
   end
 end
+
+Aws.config.update({
+   credentials: Aws::Credentials.new('AKIA2V3KRPTUQKCJSSEK', 'fi7suTGlg9UbBY+hDm29TVtxxPPP9Mu1zC6B4pLf')
+})
